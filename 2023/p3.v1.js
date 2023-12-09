@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const input = fs
-  .readFileSync("puzzle3.input", "utf8")
+  .readFileSync("p3.input", "utf8")
   .split("\r\n")
   .map((s) => s.split("").map((s) => (s === "." ? null : s)));
 

@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const input = fs.readFileSync("puzzle4.input", "utf8").split("\r\n");
+const input = fs.readFileSync("p4.input", "utf8").split("\r\n");
 
 let total = 0;
 

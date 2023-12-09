@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const input = fs.readFileSync("puzzle2.input", "utf8").split("\r\n");
+const input = fs.readFileSync("p2.input", "utf8").split("\r\n");
 
 const BAG = {
   red: 12,

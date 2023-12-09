@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const input = fs.readFileSync("puzzle7.input", "utf8").split("\r\n");
+const input = fs.readFileSync("p7.input", "utf8").split("\r\n");
 
 const cards = [];
 

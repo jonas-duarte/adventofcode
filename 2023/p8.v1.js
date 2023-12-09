@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const input = fs.readFileSync("puzzle8.input", "utf8").split("\r\n");
+const input = fs.readFileSync("p8.input", "utf8").split("\r\n");
 
 const navigation = input
   .shift()

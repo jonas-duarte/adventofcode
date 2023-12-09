@@ -2,7 +2,7 @@ console.time("TEMPO: ");
 
 const fs = require("fs");
 
-const input = fs.readFileSync("puzzle5.input", "utf8").split("\r\n");
+const input = fs.readFileSync("p5.input", "utf8").split("\r\n");
 
 const seedRanges = input.shift().split(": ")[1].split(" ").map(Number);
 

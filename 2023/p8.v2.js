@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const input = fs.readFileSync("puzzle8.input", "utf8").split("\r\n");
+const input = fs.readFileSync("p8.input", "utf8").split("\r\n");
 
 const navigation = input
   .shift()
@@ -36,13 +36,18 @@ for (const line of input) {
 const waysSteps = [];
 for (let key of startingKeys) {
   let steps = 0;
-  while (!key.endsWith("Z")) {
+  while (true) {
     const direction = navigation[steps % navigation.length];
     key = map.get(key)[direction];
     steps++;
+
+    if (key.endsWith("Z")) console.log(steps);
+
+    if (steps > 100000) break;
   }
 
   waysSteps.push(steps);
+  break;
 }
 
 console.log(waysSteps);
@@ -67,8 +72,6 @@ function findFactors(n) {
 
   return factors;
 }
-
-
 
 const factors = waysSteps.map(findFactors); //.flat();
 

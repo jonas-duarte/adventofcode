@@ -22,7 +22,7 @@ function predictNextNumber(numbers) {
 
 let total = 0;
 for (const line of input) {
-  const numbers = line.split(" ").map(Number);
+  const numbers = line.split(" ").map(Number).reverse();
   total += predictNextNumber(numbers);
 }
 
